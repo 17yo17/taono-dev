@@ -8,7 +8,8 @@
 	"main": "worker/index.ts",
 	"compatibility_date": "2026-02-19",
 	"assets": {
-		"not_found_handling": "single-page-application"
+		"directory": "./dist", // This is the directory where "npm run build" will put files
+		"binding": "ASSETS"
 	},
 	"observability": {
 		"enabled": true
