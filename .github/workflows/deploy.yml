@@ -9,8 +9,21 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '24'
+
       - name: Install Dependencies
         run: npm install
+
+      - name: Build Frontend
+        run: npm run 
+        
+      - name: Check if dist directory for the compiled files exists
+        run: ls -R dist
+      
       - name: Deploy
         uses: cloudflare/wrangler-action@v3
         with:
