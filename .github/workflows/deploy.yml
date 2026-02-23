@@ -21,7 +21,7 @@ jobs:
       - name: Build Frontend
         run: npm run build
         
-      - name: Check if dist directory for the compiled files exists
+      - name: Verify Build
         run: ls -R dist
       
       - name: Deploy
